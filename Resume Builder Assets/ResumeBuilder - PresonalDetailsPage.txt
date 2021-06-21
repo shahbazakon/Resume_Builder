@@ -1,0 +1,279 @@
+package Resume_Builder;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.JButton;
+import java.awt.Component;
+import javax.swing.Box;
+import javax.swing.InputMap;
+
+import java.awt.event.ActionListener;
+import java.awt.im.InputContext;
+import java.awt.event.ActionEvent;
+
+public class presonal_details_page {
+
+	private JFrame frame;
+	private JTextField First_Name;
+	private JTextField Second_Name;
+	private JTextField Email;
+	private JTextField LinkedIn;
+	private JTextField Your_Website;
+	private JTextField Facebook;
+	private JTextField Phone_Number;
+	private JTextField GitHub;
+	private JTextField Twitter;
+	private JTextField Instagram;
+	String FName,SName,EmailId,FacebookId,LinkedInId,Website,GitHubId,PhoneNo,TwitterId,InstaId;
+	
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					presonal_details_page window = new presonal_details_page();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public presonal_details_page() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 877, 503);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		Component glue = Box.createGlue();
+		glue.setBounds(860, 4, -862, 460);
+		frame.getContentPane().add(glue);
+		glue.contains(0, 0);
+		
+		JPanel Main_panel = new JPanel();
+		Main_panel.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
+		Main_panel.setBounds(29, 11, 809, 445);
+		frame.getContentPane().add(Main_panel);
+		Main_panel.setLayout(null);
+		
+		JPanel Second_panel = new JPanel();
+		Second_panel.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
+		Second_panel.setBounds(10, 11, 789, 39);
+		Main_panel.add(Second_panel);
+		
+		JLabel lblNewLabel = new JLabel("Presnol Details");
+		lblNewLabel.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		Second_panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("First Name*");
+		lblNewLabel_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(92, 61, 82, 21);
+		Main_panel.add(lblNewLabel_1);
+		
+		First_Name = new JTextField();
+		First_Name.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		First_Name.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		First_Name.setBackground(new Color(240, 240, 240));
+		First_Name.setForeground(new Color(25, 25, 112));
+		First_Name.setBounds(92, 87, 262, 29);
+		Main_panel.add(First_Name);
+		First_Name.setColumns(10);
+		
+		Second_Name = new JTextField();
+		Second_Name.setColumns(10);
+		Second_Name.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Second_Name.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Second_Name.setBackground(new Color(240, 240, 240));
+		Second_Name.setForeground(new Color(25, 25, 112));
+		Second_Name.setBounds(459, 87, 262, 29);
+		Main_panel.add(Second_Name);
+		
+		JLabel Second_Name_label = new JLabel("Second Name*");
+		Second_Name_label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Second_Name_label.setBounds(459, 61, 116, 21);
+		Main_panel.add(Second_Name_label);
+		
+		Email = new JTextField();
+		Email.setForeground(new Color(25, 25, 112));
+		Email.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Email.setColumns(10);
+		Email.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Email.setBackground(UIManager.getColor("Button.background"));
+		Email.setBounds(92, 153, 262, 29);
+		Main_panel.add(Email);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("Email*");
+		lblNewLabel_1_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_1_1.setBounds(92, 127, 82, 21);
+		Main_panel.add(lblNewLabel_1_1);
+		
+		LinkedIn = new JTextField();
+		LinkedIn.setForeground(new Color(25, 25, 112));
+		LinkedIn.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		LinkedIn.setColumns(10);
+		LinkedIn.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		LinkedIn.setBackground(UIManager.getColor("Button.background"));
+		LinkedIn.setBounds(92, 285, 262, 29);
+		Main_panel.add(LinkedIn);
+		
+		JLabel LinkedIn_Label = new JLabel("Linked In");
+		LinkedIn_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		LinkedIn_Label.setBounds(92, 259, 82, 21);
+		Main_panel.add(LinkedIn_Label);
+		
+		Your_Website = new JTextField();
+		Your_Website.setForeground(new Color(25, 25, 112));
+		Your_Website.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Your_Website.setColumns(10);
+		Your_Website.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Your_Website.setBackground(UIManager.getColor("Button.background"));
+		Your_Website.setBounds(92, 219, 262, 29);
+		Main_panel.add(Your_Website);
+		
+		JLabel Your_Website_Lanel = new JLabel("Your Website");
+		Your_Website_Lanel.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Your_Website_Lanel.setBounds(92, 193, 95, 21);
+		Main_panel.add(Your_Website_Lanel);
+		
+		Facebook = new JTextField();
+		Facebook.setForeground(new Color(25, 25, 112));
+		Facebook.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Facebook.setColumns(10);
+		Facebook.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Facebook.setBackground(UIManager.getColor("Button.background"));
+		Facebook.setBounds(92, 351, 262, 29);
+		Main_panel.add(Facebook);
+		
+		JLabel Facebook_Label = new JLabel("Facebook");
+		Facebook_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Facebook_Label.setBounds(92, 325, 82, 21);
+		Main_panel.add(Facebook_Label);
+		
+		Phone_Number = new JTextField();
+		Phone_Number.setForeground(new Color(25, 25, 112));
+		Phone_Number.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Phone_Number.setColumns(10);
+		Phone_Number.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Phone_Number.setBackground(UIManager.getColor("Button.background"));
+		Phone_Number.setBounds(459, 153, 262, 29);
+		Main_panel.add(Phone_Number);
+		
+		JLabel Phone_Number_Label = new JLabel("Phone Number");
+		Phone_Number_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Phone_Number_Label.setBounds(459, 127, 116, 21);
+		Main_panel.add(Phone_Number_Label);
+		
+		JLabel GitHub_Label = new JLabel("GitHub");
+		GitHub_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		GitHub_Label.setBounds(459, 193, 82, 21);
+		Main_panel.add(GitHub_Label);
+		
+		GitHub = new JTextField();
+		GitHub.setForeground(new Color(25, 25, 112));
+		GitHub.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		GitHub.setColumns(10);
+		GitHub.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		GitHub.setBackground(UIManager.getColor("Button.background"));
+		GitHub.setBounds(459, 219, 262, 29);
+		Main_panel.add(GitHub);
+		
+		JLabel Twitter_Label = new JLabel("Twitter");
+		Twitter_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Twitter_Label.setBounds(459, 259, 51, 21);
+		Main_panel.add(Twitter_Label);
+		
+		Twitter = new JTextField();
+		Twitter.setForeground(new Color(25, 25, 112));
+		Twitter.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Twitter.setColumns(10);
+		Twitter.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Twitter.setBackground(UIManager.getColor("Button.background"));
+		Twitter.setBounds(459, 285, 262, 29);
+		Main_panel.add(Twitter);
+		
+		JLabel Instagram_Label = new JLabel("Instagram");
+		Instagram_Label.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		Instagram_Label.setBounds(459, 325, 82, 21);
+		Main_panel.add(Instagram_Label);
+		
+		Instagram = new JTextField();
+		Instagram.setForeground(new Color(25, 25, 112));
+		Instagram.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		Instagram.setColumns(10);
+		Instagram.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		Instagram.setBackground(UIManager.getColor("Button.background"));
+		Instagram.setBounds(459, 351, 262, 29);
+		Main_panel.add(Instagram);
+		
+		JButton Back_Btn = new JButton("Back");
+		Back_Btn.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
+		Back_Btn.setForeground(new Color(245, 245, 245));
+		Back_Btn.setBackground(new Color(128, 128, 128));
+		Back_Btn.setBounds(264, 391, 82, 29);
+		Main_panel.add(Back_Btn);
+		
+		JButton Next_Btn = new JButton("Next");
+		Next_Btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+
+				FName = First_Name.getText();				//Initializing value
+				SName = Second_Name.getText();
+				EmailId = Email.getText();
+				LinkedInId = LinkedIn.getText();
+				InstaId = Instagram.getText();
+				TwitterId = Twitter.getText();
+				GitHubId = GitHub.getText();
+				FacebookId = Facebook.getText();
+				PhoneNo = Phone_Number.getText();
+				Website = Your_Website.getText();
+				
+				
+				System.out.println(FName + " " + SName);	//Temporary print all Values
+				System.out.println("Email: " + EmailId);
+				System.out.println("Phone Number: " + PhoneNo);
+				System.out.println("Facebook: " + FacebookId);
+				System.out.println("LinkedIn: " + LinkedInId);
+				System.out.println("Instagram: " + InstaId);
+				System.out.println("Twitter: " + TwitterId);
+				System.out.println("GitHub: " + GitHubId);
+				System.out.println("Your Website: " + Website);
+				
+			}
+		});
+		Next_Btn.setForeground(new Color(245, 245, 245));
+		Next_Btn.setBorder(new LineBorder(new Color(240, 240, 240), 3, false));
+		Next_Btn.setBackground(new Color(0, 0, 128));
+		Next_Btn.setBounds(469, 391, 82, 29);
+		Main_panel.add(Next_Btn);
+		
+		JLabel PageNo = new JLabel("1/5");
+		PageNo.setForeground(new Color(128, 128, 128));
+		PageNo.setFont(new Font("Yu Gothic UI Semibold", Font.PLAIN, 14));
+		PageNo.setBounds(395, 420, 20, 14);
+		Main_panel.add(PageNo);
+		
+		
+	}
+}

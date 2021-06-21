@@ -1,0 +1,117 @@
+ProD_panel = new JPanel();
+		frame.getContentPane().add(ProD_panel, "p3");
+		ProD_panel.setLayout(null);
+		
+		JPanel ProDSecond_panel = new JPanel();
+		ProDSecond_panel.setBounds(34, 23, 789, 39);
+		ProDSecond_panel.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
+		ProD_panel.add(ProDSecond_panel);
+		
+		JLabel lblNewLabel_2 = new JLabel("Projects Details");
+		lblNewLabel_2.setFont(new Font("Yu Gothic UI Semilight", Font.BOLD, 22));
+		ProDSecond_panel.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Title:");
+		lblNewLabel_3.setBounds(69, 127, 74, 20);
+		lblNewLabel_3.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		ProD_panel.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Projects 1");
+		lblNewLabel_4.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 20));
+		lblNewLabel_4.setBounds(378, 84, 92, 28);
+		ProD_panel.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_3_1 = new JLabel("Link:");
+		lblNewLabel_3_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_3_1.setBounds(69, 170, 74, 20);
+		ProD_panel.add(lblNewLabel_3_1);
+		
+		textField_10 = new JTextField();
+		textField_10.setForeground(new Color(25, 25, 112));
+		textField_10.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		textField_10.setColumns(10);
+		textField_10.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textField_10.setBackground(UIManager.getColor("Button.background"));
+		textField_10.setBounds(162, 163, 615, 27);
+		ProD_panel.add(textField_10);
+		
+		textField_9 = new JTextField();
+		textField_9.setForeground(new Color(25, 25, 112));
+		textField_9.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		textField_9.setColumns(10);
+		textField_9.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textField_9.setBackground(UIManager.getColor("Button.background"));
+		textField_9.setBounds(162, 124, 615, 27);
+		ProD_panel.add(textField_9);
+		
+		JLabel lblNewLabel_3_1_1 = new JLabel("Description :");
+		lblNewLabel_3_1_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_3_1_1.setBounds(69, 211, 90, 20);
+		ProD_panel.add(lblNewLabel_3_1_1);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(162, 202, 615, 29);
+		textPane.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
+		textPane.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textPane.setBackground(UIManager.getColor("Button.background"));
+		textPane.setForeground(new Color(25, 25, 112));
+		ProD_panel.add(textPane);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setForeground(new Color(211, 211, 211));
+		separator_1.setBackground(new Color(192, 192, 192));
+		separator_1.setBounds(45, 255, 778, 7);
+		ProD_panel.add(separator_1);
+		
+		JLabel lblNewLabel_3_2 = new JLabel("Title:");
+		lblNewLabel_3_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_3_2.setBounds(69, 317, 74, 20);
+		ProD_panel.add(lblNewLabel_3_2);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Projects 2");
+		lblNewLabel_4_1.setFont(new Font("Yu Gothic Medium", Font.PLAIN, 20));
+		lblNewLabel_4_1.setBounds(378, 274, 92, 27);
+		ProD_panel.add(lblNewLabel_4_1);
+		
+		JLabel lblNewLabel_3_1_2 = new JLabel("Link:");
+		lblNewLabel_3_1_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_3_1_2.setBounds(69, 360, 74, 20);
+		ProD_panel.add(lblNewLabel_3_1_2);
+		
+		textField_11 = new JTextField();
+		textField_11.setForeground(new Color(25, 25, 112));
+		textField_11.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		textField_11.setColumns(10);
+		textField_11.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textField_11.setBackground(UIManager.getColor("Button.background"));
+		textField_11.setBounds(162, 353, 615, 27);
+		ProD_panel.add(textField_11);
+		
+		textField_12 = new JTextField();
+		textField_12.setForeground(new Color(25, 25, 112));
+		textField_12.setFont(new Font("Trebuchet MS", Font.PLAIN, 17));
+		textField_12.setColumns(10);
+		textField_12.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textField_12.setBackground(UIManager.getColor("Button.background"));
+		textField_12.setBounds(162, 314, 615, 27);
+		ProD_panel.add(textField_12);
+		
+		JLabel lblNewLabel_3_1_1_1 = new JLabel("Description :");
+		lblNewLabel_3_1_1_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 14));
+		lblNewLabel_3_1_1_1.setBounds(69, 401, 90, 20);
+		ProD_panel.add(lblNewLabel_3_1_1_1);
+		
+		JTextPane textPane_1 = new JTextPane();
+		textPane_1.setForeground(new Color(25, 25, 112));
+		textPane_1.setFont(new Font("Trebuchet MS", Font.PLAIN, 15));
+		textPane_1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
+		textPane_1.setBackground(UIManager.getColor("Button.background"));
+		textPane_1.setBounds(162, 392, 615, 29);
+		ProD_panel.add(textPane_1);
+		
+		JSeparator separator_1_1 = new JSeparator();
+		separator_1_1.setForeground(new Color(211, 211, 211));
+		separator_1_1.setBackground(Color.LIGHT_GRAY);
+		separator_1_1.setBounds(45, 445, 778, 7);
+		ProD_panel.add(separator_1_1);
+		
